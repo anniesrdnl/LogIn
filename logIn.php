@@ -3,7 +3,7 @@
 $conn = mysqli_connect("localhost", "root", "", "itlab");
 
 if(!$conn) {
-    die("connection failed");
+    die("connection failed")
 }
 
 $username = $_POST['username'];
@@ -21,6 +21,7 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($conn);
 ?>
+
 
 
 
