@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "root", "", "itlab");
+$conn = mysqli_connect("localhost", "root", "", "itlab")
 
 if(!$conn) {
     die("connection failed");
@@ -21,6 +21,7 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($conn);
 ?>
+
 
 
 
