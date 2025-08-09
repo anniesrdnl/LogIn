@@ -6,8 +6,7 @@ if(!$conn) {
     die("connection failed");
 }
 
-// Get form data
-$email = $_POST['email'];
+$username = $_POST['username'];
 $password = $_POST['password'];
 
 // Authentication
@@ -18,3 +17,4 @@ if ($email === $valid_email && $password === $valid_password) {
 }
 
 ?>
+
