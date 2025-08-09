@@ -16,11 +16,12 @@ if (mysqli_num_rows($result) > 0) {
     echo" success =)";
     exit();
 } else {
-    echo" Login failed"    
+    echo" Login failed";    
 }
 
 mysqli_close($conn);
 ?>
+
 
 
 
