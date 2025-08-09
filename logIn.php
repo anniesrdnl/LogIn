@@ -9,12 +9,13 @@ if(!$conn) {
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Authentication
-if ($email === $valid_email && $password === $valid_password) {
-    echo "<h1>Login Successful</h1>";
+$sql = "SELECT * FROM admin WHERE username = '$username' AND password = 'password'";
+$result = mysqli_query($conn, $sql);
+
 } else {
     echo "<h1>Invalid Email or Password</h1>";
 }
 
 ?>
+
 
