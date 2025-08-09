@@ -19,7 +19,9 @@ if (mysqli_num_rows($result) > 0) {
     echo" Login failed";    
 }
 
+mysqli_close($conn);
 ?>
+
 
 
 
