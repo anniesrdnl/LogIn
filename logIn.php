@@ -1,7 +1,10 @@
 <?php
 
-$valid_email = "johndoe@gmail.com";
-$valid_password = "12345";
+$conn = mysqli_connect("localhost", "root", "", "itlab");
+
+if(!$conn) {
+    die("connection failed");
+}
 
 // Get form data
 $email = $_POST['email'];
@@ -13,4 +16,5 @@ if ($email === $valid_email && $password === $valid_password) {
 } else {
     echo "<h1>Invalid Email or Password</h1>";
 }
+
 ?>
