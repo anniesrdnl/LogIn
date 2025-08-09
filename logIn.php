@@ -12,10 +12,12 @@ $password = $_POST['password'];
 $sql = "SELECT * FROM admin WHERE username = '$username' AND password = 'password'";
 $result = mysqli_query($conn, $sql);
 
-} else {
-    echo "<h1>Invalid Email or Password</h1>";
+if (mysqli_num_rows($result) > 0) {
+    echo" success =)";
+    exit();
 }
 
 ?>
+
 
 
